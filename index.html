@@ -18,25 +18,30 @@
     padding: 0;
 }
 
+html {
+    height:70vh; 
+    max-width: 1440px; 
+}
+
 body {
     background: url("https://source.unsplash.com/0ZPSX_mQ3xI/1600x900") no-repeat center center/cover;
     margin-right: auto;    
-    max-height: 98vh;    
+    max-height: 35vh; 
+    width: 1440px;   
 }
 
 header {
     background-color: hsl(233, 47%, 7%);
     height: 700px;
-    width: 1800px;
-    margin: 130px 55px 66px 55px;
+    width: 1440px;
     display: flex;    
 }
 
 main { 
     position: inherit;   
     background-color: #1c1938;
-    height: 447px;
-    width: 1400px;
+    height: 446px;
+    width: 1440px;
     margin: 130px 190px 130px 190px;
     border-radius: 10px;
     display: grid;
@@ -55,7 +60,7 @@ main {
 
 .section1 h1 {
     color: hsl(0, 0%, 100%);
-    font-size: 48px;
+    font-size: 32px;
     margin-top: 70px;
     font-family: 'Inter', sans-serif;   
 }
@@ -74,23 +79,13 @@ main {
     justify-content: space-between;
     margin-top: 60px;
     margin-right: 50px;
-    }
-
-
-.flex2 {
-    font-family: 'Lexend Deca', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 10px;
-    margin-right: 45px;
-    font-size: 15px;
-    color: hsla(0, 0%, 100%, 0.6);
 }
+
 
 
 .flex  h2 {
     color: hsl(0, 0%, 100%);
+    margin-bottom: -20px;
 }
 
 .section2 {
@@ -99,7 +94,7 @@ main {
 
 .section2 > img {
     opacity: 0.7; 
-    width: 100%;
+    
     filter:brightness(150%);   
 }
 
@@ -154,7 +149,7 @@ footer {
     .section1 p {
         color: hsla(0, 0%, 100%, 0.6);
         font-family: 'Lexend Deca', sans-serif;
-        font-size: 12x;
+        font-size: 12px;
         margin: 20px 10px;
         font-weight: 400;
     }
@@ -226,7 +221,7 @@ footer {
       </section>
     </section>
     <section class="section2">
-      <img src="image-header-desktop.jpg">
+      <img src="image-header-desktop.jpg" alt="header">
     </section>
   </main>
 </header>
