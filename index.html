@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <title>Frontend Mentor | Stats preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet"> 
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("https://source.unsplash.com/0ZPSX_mQ3xI/1600x900") no-repeat center center/cover;
+    margin-right: auto;    
+    max-height: 98vh;    
+}
+
+header {
+    background-color: hsl(233, 47%, 7%);
+    height: 700px;
+    width: 1800px;
+    margin: 130px 55px 66px 55px;
+    display: flex;    
+}
+
+main { 
+    position: inherit;   
+    background-color: #1c1938;
+    height: 447px;
+    width: 1400px;
+    margin: 130px 190px 130px 190px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+}
+
+.section1 {    
+    justify-self: center; 
+    margin: 0 80px;   
+}
+
+.pink {
+    color: #9e55ca; 
+}
+
+.section1 h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 48px;
+    margin-top: 70px;
+    font-family: 'Inter', sans-serif;   
+}
+
+.section1 p {
+    color: hsla(0, 0%, 100%, 0.6);
+    margin-top: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.flex {
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-right: 50px;
+    }
+
+
+.flex2 {
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 45px;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+
+.flex  h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.section2 {
+    background-color: rgba(142, 18, 219, 0.575);  
+}
+
+.section2 > img {
+    opacity: 0.7; 
+    width: 100%;
+    filter:brightness(150%);   
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media  screen and (max-width: 375px)  {
+    body {
+        max-width: 375px;
+        max-height: 870px;
+        background-color: hsl(233, 47%, 7%);
+        background-image: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        background-color: hsl(233, 47%, 7%);
+        margin: 0;
+        display: grid;
+        height: 870px;
+        width: auto;
+        
+    }
+
+    main { 
+        margin: 20px 20px;
+        padding: 0;
+        background-color: #1c1938;
+        height: 830px;
+        width: 330px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .section1 {    
+        text-align: center;
+        order: 2; 
+        margin: 0;
+    }
+
+    .section1  h1 {
+        color: hsl(0, 0%, 100%);
+        font-size: 27px;
+        margin-top: 40px;
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .section1 p {
+        color: hsla(0, 0%, 100%, 0.6);
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 12x;
+        margin: 20px 10px;
+        font-weight: 400;
+    }
+
+    .section2 {
+        background-color: rgba(144, 44, 206, 0.575);  
+        width: fit-content;
+    }
+    
+    .section2 > img {
+        opacity: 0.5; 
+        width: 100%; 
+        filter:contrast(150%) brightness(70%);  
+        height: 100%; 
+    }
+
+    .flex {
+        justify-content: center;
+        justify-self: center;
+        font-family: 'Lexend Deca', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10px;
+        padding-left: 50px;
+    }
+
+    .flex h2 {
+        padding: 0;
+        margin: 0;
+        color: hsl(0, 0%, 100%);;
+    }
+    .flex p {
+        padding: 0;
+        font-size: 15px;
+        color: hsla(0, 0%, 100%, 0.6);
+    }
+    .flex div {
+        margin: 10px;
+    }
+
+    .flex2 {
+        font-family: 'Lexend Deca', sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-right: 45px;
+        font-size: 15px;
+        color: hsla(0, 0%, 100%, 0.6);
+    }
+
+    footer {
+        display: none;
+    }
+  }
+  </style>
+</head>
+<body>
+<header>
+  <main>
+    <section class="section1">
+      <h1>Get <span style="color: #9e55ca; ">insights</span> that help<br>your business grow.</h1>
+      <p>Discover the benefits of data analytics and make better decision regarding revenue, customer experience, and overalll efficency.</p>
+      <section class="flex">
+        <div><h2>10k+</h2><p>COMPANIES</p></div>
+        <div><h2>314+</h2><p>TEMPLATES</p></div>
+        <div><h2>12M+</h2><p>QUERIES</p></div>
+      </section>
+    </section>
+    <section class="section2">
+      <img src="image-header-desktop.jpg">
+    </section>
+  </main>
+</header>
+  <footer>
+    Challenge by &nbsp <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by &nbsp<a href="https://github.com/szymKamil">Kamil Szymański</a>.
+  </footer>
+</body>
+</html>
